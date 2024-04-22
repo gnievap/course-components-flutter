@@ -12,7 +12,11 @@ class ListView2Screen extends StatelessWidget {
       ),
       body: ListView.separated(
         itemCount: options.length,
-        itemBuilder: (context, index) => Text(options[index]),
+        itemBuilder: (context, index) => ListTile(
+          leading: const Icon(Icons.pets),
+          title: Text(options[index]),
+          trailing: const Icon(Icons.arrow_forward_ios_outlined),
+        ),
         separatorBuilder: (_, __) => const Divider(),
       ),
     );
