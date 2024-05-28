@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:course_components/widgets/widgets.dart';
 
-
-
 class CardScreen extends StatelessWidget {
   const CardScreen({Key? key}) : super(key: key);
 
@@ -16,6 +14,10 @@ class CardScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         children: const [
           CustomCardType1(),
+          SizedBox(
+            height: 10,
+          ),
+          CustomCardType2(),
         ],
       ),
     );
